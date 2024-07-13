@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+.heading{
+    font-family: 'Karma',sans-serif;
+    font-style: normal;
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.button-link{
+    text-decoration: none;
+    color: white;
+}
+
+.landing-text-heading{
+    font-family: "Irish Grover", serif;
+    width: 60%;
+    margin: -5%;
+    color: #02476E;
+    margin-left: 5%;
+    font-size: 45px;
+}
+.landing-text-paragraph{
+    font-family: "karma", serif;
+    font-size: 50px;
+    width: 50%;
+    margin-top: 10%;
+    /* margin: -5%; */
+    margin-left: 5%;
+    color: #02476E;
+}
+
+
+.downloadButton{
+padding: 20px;
+margin-top: 5%;
+margin-left: 70px;
+border-radius: 20px;
+height: 105px;
+width: 280px;
+background-color: #E33333;
+color: white;
+border: none;
+font-size: 40px;
+}
+
+.wezeshawelcometext{
+    display: flex;
+    gap: 8%;
+    margin-top: 80px;
+    margin-left: 50px;
+    
+}
+.landingpic{
+    width: 38%;
+    /* background-color: #E33333;   */
+    border-radius: 50%;   
+    margin-left: -46%;
+    margin-top: -50px;    
+    object-fit: cover;
+   
+}
+.landingpagecontent{
+    margin-left: 6.2%;
+}
+    @media only screen and (min-width: 280px) and (max-width: 359px) {
+
+    .navbar{
+        font-size: 10px;
+        font-weight: 400;
+        display: flex;
+        flex-wrap: wrap;      
+    
+    }
+    .landingtext{
+        margin: -5%;
+        margin-left: -2%;
+    }
+    .landing-text-paragraph{
+        font-size: 20px;
+        width: 100%;
+        margin-left: -10%;
+    }
+
+    .landing-text-heading{
+        width: 99%;
+        margin-left:-10%;
+        font-size: 21px;
+    }
+   
+    .downloadButton{
+        margin-left: -10%;
+        width: 220px;
+        padding: 20px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .landingpic{
+        width: 200px;
+        height: 200px;
+         margin-left: -10px;
+        margin-top: 25%; 
+       
+    }
+    .landing-left{
+        margin-top: -70px;
+        margin-left: 8px;
+       
+    }
+    .wezeshawelcometext{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .landingpagecontent{
+        margin-left: 2px;
+       
+    }
+   
+    
+   
+}
+/* @media screen and (min-width:414px)and (max-width:556px){ */
+@media only screen and (min-width: 360px) and (max-width: 380px) {
+
+    .landingtext{
+        margin: -5%;
+        margin-left: -2%;
+    }
+    .landing-text-paragraph{
+        font-size: 20px;
+        width: 100%;
+        margin-left: -10%;
+    }
+
+    .landing-text-heading{
+        width: 99%;
+        margin-left:-10%;
+        font-size: 25px;
+    }
+   
+    .downloadButton{
+        margin-left: -10%;
+        width: 270px;
+        padding: 20px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .landingpic{
+        width: 250px;
+        height: 250px;
+         margin-left: -10px;
+        margin-top: 10%; 
+       
+    }
+    .landing-left{
+        margin-top: -70px;
+        margin-left: 8px;
+       
+    }
+    .wezeshawelcometext{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .landingpagecontent{
+        margin-left: 2px;
+       
+    }
+}
+/* @media screen and (min-width:557px)and (max-width:739px){ */
+    @media only screen and (min-width: 390px) and (max-width: 480px) {
+
+        .landingtext{
+            margin: 5%;
+            margin-left: -2%;
+        }
+        .landing-text-paragraph{
+            font-size: 25px;
+            width: 100%;
+            margin-left: -10%;
+        }
+    
+        .landing-text-heading{
+            width: 99%;
+            margin-left:-10%;
+            font-size: 28px;
+        }
+       
+        .downloadButton{
+            margin-left: -10%;
+            width: 300px;
+            padding: 20px;
+            height: 60px;
+            font-size: 20px;
+        }
+        .landingpic{
+            width: 280px;
+            height: 280px;
+             margin-left: -10px;
+            margin-top: 15%; 
+           
+        }
+        .landing-left{
+            margin-top: -70px;
+            margin-left: 8px;
+           
+        }
+        .wezeshawelcometext{
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    
+        .landingpagecontent{
+            margin-left: 2px;
+           
+        }
+}
+@media screen and (min-width:481px)and (max-width:540px){
+
+    .landingtext{
+        margin: 5%;
+        margin-left: -2%;
+    }
+    .landing-text-paragraph{
+        font-size: 25px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .landing-text-heading{
+        width: 85%;
+        margin-left:30px;
+        font-size: 30px;
+    }
+   
+    .downloadButton{
+        margin-left: 5%;
+        width: 350px;
+        padding: 20px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .landingpic{
+        width: 250px;
+        height: 250px;
+         margin-left: 80px;
+        margin-top: 10%; 
+       
+    }
+    .landing-left{
+        margin-top: -70px;
+        margin-left: 8px;
+       
+    }
+    .wezeshawelcometext{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .landingpagecontent{
+        margin-left: 2px;
+       
+    }
+}
+@media screen and (min-width:681px)and (max-width:780px){
+    .landing-text-paragraph{
+        font-size: 25px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .landing-text-heading{
+        width: 70%;
+        margin-left:20%;
+        font-size: 40px;
+    }
+   
+    .downloadButton{
+        margin-left: 22%;
+        width: 350px;
+        padding: 20px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .landingpic{
+        width: 350px;
+        height: 350px;
+         margin-left: 20%;
+        margin-top: 10%; 
+       
+    }
+    .landing-left{
+        margin-top: -70px;
+        margin-left: 8px;
+       
+    }
+    .wezeshawelcometext{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .landingpagecontent{
+        margin-left: 2px;
+       
+    }
+}
+@media screen and (min-width:820px)and (max-width:920px){
+    
+    .landing-text-paragraph{
+        font-size: 25px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .landing-text-heading{
+        width: 70%;
+        margin-left:20%;
+        font-size: 40px;
+    }
+   
+    .downloadButton{
+        margin-left: 22%;
+        width: 350px;
+        padding: 20px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .landingpic{
+        width: 350px;
+        height: 350px;
+         margin-left: 20%;
+        margin-top: 10%; 
+       
+    }
+    .landing-left{
+        margin-top: -70px;
+        margin-left: 8px;
+       
+    }
+    .wezeshawelcometext{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .landingpagecontent{
+        margin-left: 2px;
+       
+    }
+}
+@media screen and (min-width:921px)and (max-width:1024px){
+
+    .landing-text-paragraph{
+        font-size: 30px;
+        width: 45%;
+        margin-left: -2%;
+    }
+
+    .landing-text-heading{
+        width: 95%;
+        margin-left:-2%;
+        font-size: 30px;
+    }
+   
+    .downloadButton{
+        margin-left: -2%;
+        width: 300px;
+        padding: 20px;
+        margin-top: -10px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .landingpic{
+        width: 300px;
+        height: 300px;
+        margin-top: 10px;
+         
+       
+    }
+    .landing-left{
+        margin-top: -20px;
+        margin-left: 8px;
+       
+    }  
+   
+
+    .landingpagecontent{
+        margin-left: 2px;
+       
+    }
+}
+
+@media screen and (min-width:1025px)and (max-width:1280px){
+    .landing-text-paragraph{
+        font-size: 40px;
+        width: 50%;
+        margin-left: 2%;
+    }
+
+    .landing-text-heading{
+        width: 95%;
+        margin-left:2%;
+        font-size: 40px;
+    }
+   
+    .downloadButton{
+        margin-left: 2%;
+        width: 300px;
+        padding: 20px;
+        margin-top: 25px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .landingpic{
+        width: 450px;
+        height: 450px;
+        margin-top: -15px;
+         
+       
+    }
+    .landing-left{
+        margin-top: -20px;
+        margin-left: 8px;
+       
+    }  
+   
+
+    .landingpagecontent{
+        margin-left: 2px;
+       
+    }
+}
