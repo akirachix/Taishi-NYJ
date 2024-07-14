@@ -3,11 +3,13 @@
 
 :root {
     --white-color: #fff;
-    --mainColor:#db2b39;
+    --mainColor: #db2b39;
     --textColor: #eee;
-  }
-  
-  .banner {
+    --buttonColor: #db2b39; /* Orange color */
+    --buttonTextColor: #fff; /* White color */
+}
+
+.banner {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -16,9 +18,9 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-  }
-  
-  .content {
+}
+
+.content {
     max-width: 450px;
     text-wrap: wrap;
     display: flex;
@@ -27,50 +29,47 @@
     align-items: start;
     justify-content: center;
     font-family: "Irish Grover", serif;
-  }
-  
-  .banner .content h3 {
+}
+
+.banner .content h3 {
     text-align: start;
     font-weight: 700;
     font-size: 2.8em;
     color: var(--textColor);
-  }
-  
-  .banner .content p {
+}
+
+.banner .content p {
     color: var(--textColor);
-  }
-  
-  .banner .content button {
+}
+
+.banner .content button {
     padding: 10px 20px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--mainColor);
-    background-color: var(--textColor);
+    color: var(--buttonTextColor);
+    background-color: var(--buttonColor);
     border: none;
     border-radius: 1.5rem;
-    margin-left: -6.7em;
-   
-  }
-  
- 
-  .banner .content button:hover {
+}
+
+.banner .content button:hover {
     background-color: var(--mainColor);
     color: var(--textColor);
-  }
+}
 
-  .image-container {
+.image-container {
     position: relative;
     width: 100%;
     height: 90vh;
-  }
-  
-  .image-container img {
+}
+
+.image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -81,9 +80,9 @@
     justify-content: center;
     align-items: center;
     opacity: 0.9rem;
-  }
-  
-  .overlay .content {
+}
+
+.overlay .content {
     max-width: 450px;
     text-wrap: wrap;
     display: flex;
@@ -91,175 +90,142 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-   
-  }
-  .coming-soon {
+}
+
+.coming-soon {
     display: flex;
-    align-items: right;
-    gap: 8rem;
+    align-items: center;
+    gap: 2rem;
     font-size: 30px;
-  }
-  
-  .coming-soon img {
+}
+
+.coming-soon img {
     max-width: 300px;
     border-radius: 70%;
     height: auto;
-  }
-  
-  .coming-soon h3 {
+}
+
+.coming-soon h3 {
     font-size: 1.5rem;
-   
-  }
-  
-  @media only screen and (max-width: 1280px) {
-    .banner .content h3 {
-      font-size: 2rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+    .content {
+        align-items: center;
+        text-align: center;
     }
-  
+
+    .coming-soon {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .banner .content h3 {
+        font-size: 2rem;
+    }
+
     .banner .content button {
         padding: 10px 10px;
         font-size: 1rem;
-        font-weight: bold;
-        color: var(--mainColor);
-        background-color: var(--textColor);
-        border: none;
-        border-radius: 1.5rem;
-        margin-left: ;
-       
-      }
-  
+    }
+
     .coming-soon img {
-      max-width: 250px;
+        max-width: 250px;
     }
-  
+
     .coming-soon h3 {
-      font-size: 4rem;
+        font-size: 1.4rem;
     }
-  }
-  
-  @media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 640px) {
+    .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .coming-soon {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .banner .content h3 {
-      font-size: 1.8rem;
+        font-size: 1.6rem;
     }
-  
+
     .banner .content button {
-      margin-left: 10em;
+        padding: 10px 10px;
+        font-size: 1rem;
     }
-  
+
     .coming-soon img {
-      max-width: 200px;
+        max-width: 180px;
     }
-  
+
     .coming-soon h3 {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  }
-  
-  @media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .coming-soon {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .banner .content h3 {
-      font-size: 1.6rem;
+        font-size: 1.4rem;
     }
-  
+
     .banner .content button {
-      margin-left: 8em;
+        padding: 10px 10px;
+        font-size: 1rem;
     }
-  
+
     .coming-soon img {
-      max-width: 180px;
+        max-width: 150px;
     }
-  
+
     .coming-soon h3 {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-  }
-  
-  @media only screen and (max-width: 780px) {
+}
+
+@media only screen and (max-width: 320px) {
+    .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .coming-soon {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .banner .content h3 {
-      font-size: 1.4rem;
+        font-size: 1rem;
     }
-  
+
     .banner .content button {
-      margin-left: 6em;
+        padding: 10px 10px;
+        font-size: 1rem;
     }
-  
+
     .coming-soon img {
-      max-width: 150px;
+        max-width: 120px;
     }
-  
+
     .coming-soon h3 {
-      font-size: 0.8rem;
+        font-size: 0.7rem;
     }
-  }
-  
-  @media only screen and (max-width: 640px) {
-    .banner .content h3 {
-      font-size: 1.2rem;
-    }
-  
-    .banner .content button {
-      margin-left: 4em;
-    }
-  
-    .coming-soon img {
-      max-width: 120px;
-    }
-  
-    .coming-soon h3 {
-      font-size: 0.7rem;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    .banner .content h3 {
-      font-size: 1rem;
-    }
-  
-    .banner .content button {
-      margin-left: 2em;
-    }
-  
-    .coming-soon img {
-      max-width: 100px;
-    }
-  
-    .coming-soon h3 {
-      font-size: 0.6rem;
-    }
-  }
-  
-  @media only screen and (max-width: 360px) {
-    .banner .content h3 {
-      font-size: 0.8rem;
-    }
-  
-    .banner .content button {
-      margin-left: 1em;
-    }
-  
-    .coming-soon img {
-      max-width: 80px;
-    }
-  
-    .coming-soon h3 {
-      font-size: 0.5rem;
-    }
-  }
-  
-  @media only screen and (max-width: 320px) {
-    .banner .content h3 {
-      font-size: 0.6rem;
-    }
-  
-    .banner .content button {
-      margin-left: -4em;
-    }
-  
-    .coming-soon img {
-      max-width: 90px;
-    }
-  
-    .coming-soon h3 {
-      font-size: 0.4rem;
-    }
-  }
-  
+}
