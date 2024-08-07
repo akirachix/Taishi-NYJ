@@ -40,38 +40,49 @@
     display: flex;
     justify-content: space-evenly;
     gap: 4%;
-}
+  }
 .blog-container{
   display: flex;
   justify-content: space-evenly;
-    gap: 4%;
-  /* flex-direction: row; */
+  gap: 4%;
+  
 } 
+
 
 .about-book-text{
   font-family: 'Karma',sans-serif;
-    width: 80%;
+    width: 90%;
     font-size: 1.5rem;
-    margin-top: 20%;
+    margin-top: 19%;
+}
+
+.blog-heading{
+  margin-bottom: -15%;
+  font-family: 'Karma',sans-serif;
+  margin-top: -5%;
 }
 
 .blog-heading{
   margin-bottom: -15%;
   font-family: 'Karma',sans-serif;
 }
+
+.blog-heading p{
+  margin-bottom: -65%;
+  font-family: 'Karma',sans-serif;
+}
 .blog{
   margin-top: 6%;
 }
 
- .read-more-btn{
-    background-color: red;
-    width: 20%;
-    height: 9%;
-    border: none;
-    border-radius: 35px;
-    font-size: 29px;
-    text-shadow: 3px;
-    color: antiquewhite;
+.read-more-btn{
+  padding: 4px 15px;
+  margin-top: 3px;
+  width: 200px;
+  height: 50px;
+  
+  border:  2px black;
+  color: white
 
 }
 body{
@@ -87,9 +98,11 @@ body{
 }
 .book-cover{
   border: none;
+  width: 400px;
   border-radius: 40px;
   margin-top: 40px;
   margin-left: 50px;
+  height: 400px;
 }
 
 
@@ -116,11 +129,14 @@ body{
   margin: 2px 2px; 
 }
 .cancel-btn{
-  padding: 30px;
+  padding: 15px;
   margin-top: 3px;
-  background-color: none;
+  width: 200px;
+  border-radius: 35ox;
+  background-color: red;
   border:  2px black;
-  color: black;
+  font-size: 23px;
+  color: white;
 }
 
 
@@ -128,12 +144,13 @@ body{
 
   @media (min-width: 280px) and (max-width: 359px) {
     .modal-content {
+      background-color: white;
       margin: 15% auto;
-      padding: 15px;
+      padding: 25px;
       width: 90%;
     }
     .modal-content h2 {
-      font-size: 24px;
+      font-size: 16px;
     }
     .modal-content form {
       margin-top: 40px;
@@ -143,7 +160,7 @@ body{
       font-size: 16px;
     }
     .modal {
-      top: -15%;
+      top:5%;
     }
     .blog-div {
       flex-direction: column;
@@ -157,6 +174,7 @@ body{
       font-size: 1rem;
       margin-top: 15%;
       margin-left: 30px;
+      margin-bottom: 5%;
     }
     .blog-heading {
       font-size: 24px;
@@ -167,11 +185,17 @@ body{
       margin-top: 4%;
     }
     .read-more-btn {
-      width: 60%;
-      height: 7%;
-      font-size: 18px;
-      margin-left: 30px;
+      background-color: red;
+      width: auto;
+      height: auto;
+      border: none;
+      border-radius: 35px;
+      font-size: 2px;
+      
+      color: antiquewhite;
+      margin-left: 39px;
     }
+  
     .article-cards {
       flex-direction: column;
       gap: 20px;
@@ -191,9 +215,15 @@ body{
     .theme-three {
       font-size: 1.2rem;
     }
-    .cancel-btn {
-      padding: 20px;
+    .cancel-btn{
+      padding: 15px;
       margin-top: 3px;
+      width: 200px;
+      border-radius: 35ox;
+      background-color: red;
+      border:  2px black;
+      font-size: 23px;
+      color: white;
     }
   }
 
@@ -258,7 +288,7 @@ body{
 
   .read-more-btn {
     background-color: red;
-    width: 40%;
+    width: 35%;
     height: 6%;
     border: none;
     border-radius: 35px;
@@ -267,6 +297,7 @@ body{
     color: antiquewhite;
     margin-left: 39px;
   }
+
 
   .article-cards {
     display: flex;
@@ -292,16 +323,23 @@ body{
     font-family: 'Karma', sans-serif;
   }
 
-  .cancel-btn {
-    padding: 20px;
+  .cancel-btn{
+    padding: 15px;
     margin-top: 3px;
+    width: 200px;
+    border-radius: 35ox;
+    background-color: red;
+    border:  2px black;
+    font-size: 23px;
+    color: white;
   }
 }
 
 
 @media only screen and (min-width: 390px) and (max-width: 480px) {
   .modal-content {
-    background-color: #eae9f0;
+    
+    background-color: white;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -392,9 +430,15 @@ body{
     font-family: 'Karma', sans-serif;
   }
 
-  .cancel-btn {
-    padding: 20px;
+  .cancel-btn{
+    padding: 15px;
     margin-top: 3px;
+    width: 200px;
+    border-radius: 35ox;
+    background-color: red;
+    border:  2px black;
+    font-size: 23px;
+    color: white;
   }
 }
 
@@ -480,9 +524,15 @@ body{
     font-family: 'Karma', sans-serif;
   }
 
-  .cancel-btn {
-    padding: 20px;
+  .cancel-btn{
+    padding: 15px;
     margin-top: 3px;
+    width: 200px;
+    border-radius: 35ox;
+    background-color: red;
+    border:  2px black;
+    font-size: 23px;
+    color: white;
   }
 }
 
@@ -507,11 +557,11 @@ body{
     top: -15%;
   }
   .blog-div {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
   }
   .blog-container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
   }
   .about-book-text {
@@ -552,13 +602,19 @@ body{
   .theme-three {
     font-size: 1.2rem;
   }
-  .cancel-btn {
-    padding: 20px;
+  .cancel-btn{
+    padding: 15px;
     margin-top: 3px;
+    width: 200px;
+    border-radius: 35ox;
+    background-color: red;
+    border:  2px black;
+    font-size: 23px;
+    color: white;
   }
 }
 
-@media screen and (min-width:820px)and (max-width:920px){
+@media screen and (min-width:810px)and (max-width:920px){
   .modal-content {
     margin: 15% auto;
     padding: 15px;
@@ -623,9 +679,15 @@ body{
   .theme-three {
     font-size: 1.2rem;
   }
-  .cancel-btn {
-    padding: 20px;
+  .cancel-btn{
+    padding: 15px;
     margin-top: 3px;
+    width: 200px;
+    border-radius: 35ox;
+    background-color: red;
+    border:  2px black;
+    font-size: 23px;
+    color: white;
   }
 }
 
@@ -657,9 +719,9 @@ body{
     gap: 20px;
   }
   .about-book-text {
-    font-size: 1rem;
+    font-size: 1.8rem;
     margin-top: 15%;
-    margin-left: 30px;
+    margin-left: 80px;
   }
   .blog-heading {
     font-size: 24px;
@@ -670,19 +732,19 @@ body{
     margin-top: 4%;
   }
   .read-more-btn {
-    width: 60%;
-    height: 7%;
+    width: 20%;
+    height: auto;
     font-size: 18px;
-    margin-left: 30px;
+    margin-left: 330px;
   }
   .article-cards {
     flex-direction: column;
     gap: 20px;
   }
   .book-cover {
-    width: 250px;
+    width:500px;
     margin-top: 30px;
-    margin-left: 16px;
+    margin-left: 246px;
   }
   .theme-one-text {
     font-size: 1.2rem;
@@ -694,9 +756,15 @@ body{
   .theme-three {
     font-size: 1.2rem;
   }
-  .cancel-btn {
-    padding: 20px;
+  .cancel-btn{
+    padding: 15px;
     margin-top: 3px;
+    width: 200px;
+    border-radius: 35ox;
+    background-color: red;
+    border:  2px black;
+    font-size: 23px;
+    color: white;
   }
 }
 
@@ -818,8 +886,14 @@ body{
   margin: 2px 2px; 
 }
 .cancel-btn{
-  padding: 30px;
+  padding: 15px;
   margin-top: 3px;
+  width: 200px;
+  border-radius: 35ox;
+  background-color: red;
+  border:  2px black;
+  font-size: 23px;
+  color: white;
 }
 }
 
